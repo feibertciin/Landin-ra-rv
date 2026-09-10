@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realidad Virtual, Aumentada y Mixta en Ingeniería de Sistemas y Docencia | Corporación Universitaria Lasallista</title>
+  <meta name="description" content="Explora cómo la Realidad Virtual (VR), Realidad Aumentada (AR) y Realidad Mixta (MR) transforman la Ingeniería de Sistemas y la educación universitaria en la Corporación Universitaria Lasallista.">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-logo" aria-label="Inicio Corporación Universitaria Lasallista">
+        <div class="brand-icon">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">UNILASALLISTA</span>
+          <span class="brand-sub">Ingeniería & Computación Espacial</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+        <li><a href="#perspectivas" class="nav-link">Ingeniería & Docencia</a></li>
+        <li><a href="#simulacion" class="nav-link">Simulador MR</a></li>
+        <li><a href="#galeria" class="nav-link">Casos de Uso</a></li>
+        <li><a href="#institucion" class="nav-link">Institucional</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema claro u oscuro" title="Cambiar Tema">
+          <!-- Sun Icon for Light mode toggle to dark -->
+          <svg class="icon-svg theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon for Dark mode toggle to light -->
+          <svg class="icon-svg theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#simulacion" class="btn btn-gold">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          Probar Demo
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge badge-gold">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+          </svg>
+          Innovación Pedagógica & Tecnológica
+        </div>
+
+        <h1 class="hero-title">
+          Realidad Virtual, Aumentada y Mixta en la <span class="gradient-text">Ingeniería de Sistemas</span>
+        </h1>
+
+        <p class="hero-description">
+          Transformando el desarrollo de software y la práctica docente universitaria en la <strong>Corporación Universitaria Lasallista</strong> mediante la inmersión tridimensional, el prototipado holográfico y el aprendizaje interactivo de vanguardia.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#tecnologias" class="btn btn-primary">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            </svg>
+            Explorar Tecnologías (VR/AR/MR)
+          </a>
+          <a href="#perspectivas" class="btn btn-outline">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            Enfoque Docente
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/images/hero.jpg" alt="Laboratorio de Computación Espacial e Ingeniería de Sistemas" class="hero-img">
+        <div class="hero-overlay-tag">
+          <div class="hero-overlay-info">
+            <span class="hero-overlay-title">Computación Espacial Aplicada</span>
+            <span class="hero-overlay-sub">Modelado de Redes y Docencia Inmersiva</span>
+          </div>
+          <svg class="icon-svg text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section: VR vs AR vs MR Pillars -->
+  <section id="tecnologias" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Pilares Fundamentales</div>
+        <h2>Trilogía Inmersiva en la Computación</h2>
+        <p>Entienda las diferencias clave y cómo convergen la Realidad Virtual (VR), Realidad Aumentada (AR) y Realidad Mixta (MR) en la solución de problemas complejos de ingeniería.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- VR Card -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 12h20M7 12a5 5 0 0 1 10 0"></path>
+              <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Realidad Virtual (VR)</h3>
+          <p>Inmersión sintética 100% digital donde el usuario se aisla del mundo real para interactuar con escenarios 3D complejos.</p>
+          <ul class="pillar-list">
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Simulación inmersiva de Data Centers virtuales.
+            </li>
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Pruebas de estrés de infraestructura crítica en entornos controlados.
+            </li>
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Aulas virtuales libres de distracciones del entorno físico.
+            </li>
+          </ul>
+        </article>
+
+        <!-- AR Card -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Realidad Aumentada (AR)</h3>
+          <p>Superposición de elementos digitales, métricas y gráficos 3D directamente sobre la visión directa del mundo físico real.</p>
+          <ul class="pillar-list">
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Telemetría en tiempo real sobre racks y servidores físicos.
+            </li>
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Diagramas flotantes para debugging de microservicios y código.
+            </li>
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Guías interactivas contextuales para mantenimiento de hardware.
+            </li>
+          </ul>
+        </article>
+
+        <!-- MR Card -->
+        <article class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Realidad Mixta (MR)</h3>
+          <p>Combinación híbrida avanzada donde los objetos físicos y digitales coexisten e interactúan en tiempo real mediante espacialidad.</p>
+          <ul class="pillar-list">
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Manipulación gestual de hologramas de estructuras de datos.
+            </li>
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Laboratorios universitarios colaborativos de gemelos digitales.
+            </li>
+            <li class="pillar-item">
+              <svg class="pillar-bullet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Integración fluida de sensores IoT con interfaces inmersivas.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Dual Perspective (Engineer & Educator) -->
+  <section id="perspectivas" class="section dual-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-gold">Doble Perspectiva Profesional</div>
+        <h2>Impacto en Mi Ejercicio Profesional y Docente</h2>
+        <p>Cómo integro la computación espacial tanto en la construcción de sistemas de información como en la formación universitaria en la Corporación Universitaria Lasallista.</p>
+      </div>
+
+      <div class="dual-grid">
+        <!-- Box 1: Systems Engineer Perspective -->
+        <div class="perspective-box">
+          <div class="perspective-header">
+            <div class="perspective-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3>Como Ingeniero de Sistemas</h3>
+              <p class="text-gold">Arquitectura, Desarrollo & Optimización</p>
+            </div>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="feature-text-content">
+                <h4>Arquitectura de Software en 3D Espacial</h4>
+                <p>Visualización de diagramas UML, flujo de microservicios y bases de datos relacionales en entornos 3D continuos, mejorando la detección rápida de cuellos de botella.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <div class="feature-text-content">
+                <h4>Monitoreo y Ciberseguridad Inmersiva</h4>
+                <p>Análisis de tráfico de red y mapas de vulnerabilidades presentados como esferas y nodos holográficos con alertas en tiempo real.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div class="feature-text-content">
+                <h4>Prototipado de Interfaces de Nueva Generación</h4>
+                <p>Diseño e implementación de interfaces espaciales basadas en gesticulación, seguimiento ocular e interacciones por voz (Spatial UI/UX).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 2: University Lecturer Perspective -->
+        <div class="perspective-box">
+          <div class="perspective-header">
+            <div class="perspective-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Como Docente Unilasallista</h3>
+              <p class="text-gold">Pedagogía Inmersiva & Aprendizaje Activo</p>
+            </div>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="feature-text-content">
+                <h4>Laboratorios Inmersivos Sin Riesgo Físico</h4>
+                <p>Los estudiantes simulan la configuración de servidores de alto costo y desarmado de componentes de hardware complejo en un entorno seguro y replicable.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+              <div class="feature-text-content">
+                <h4>Abstracción de Algoritmos Complejos</h4>
+                <p>Transformación de estructuras de datos abstractas (árboles binarios, grafos, redes neuronales) en hologramas 3D explorables colaborativamente.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+              </div>
+              <div class="feature-text-content">
+                <h4>Motivación y Retención del Conocimiento</h4>
+                <p>Incremento significativo en el compromiso estudiantil a través de metodologías basadas en retos (Challenge-Based Learning) usando visores de Realidad Mixta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Interactive Simulator Component -->
+  <section id="simulacion" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Demostrador Interactivo</div>
+        <h2>Simulador de Perspectiva Espacial</h2>
+        <p>Seleccione una modalidad para visualizar cómo cambia la interacción de un Ingeniero y Docente en el aula de clase.</p>
+      </div>
+
+      <div class="simulator-card">
+        <div class="sim-controls">
+          <button class="sim-btn active" data-mode="vr">
+            <svg class="icon-svg sim-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+              <circle cx="8" cy="12" r="2"></circle>
+              <circle cx="16" cy="12" r="2"></circle>
+            </svg>
+            Modo VR (Virtual)
+          </button>
+
+          <button class="sim-btn" data-mode="ar">
+            <svg class="icon-svg sim-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+            </svg>
+            Modo AR (Aumentado)
+          </button>
+
+          <button class="sim-btn" data-mode="mr">
+            <svg class="icon-svg sim-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Modo MR (Mixto / Aula)
+          </button>
+        </div>
+
+        <div class="sim-viewport">
+          <img src="assets/images/hero.jpg" alt="Simulación VR" class="sim-img active" data-mode="vr">
+          <img src="assets/images/systems_ar.jpg" alt="Simulación AR" class="sim-img" data-mode="ar">
+          <img src="assets/images/education_mr.jpg" alt="Simulación MR" class="sim-img" data-mode="mr">
+
+          <div class="sim-overlay-info">
+            <h3 id="sim-overlay-title">Realidad Virtual (VR) - Inmersión Total</h3>
+            <p id="sim-overlay-desc">Prototipado inmersivo 3D de servidores, microservicios y arquitectura de redes sin restricción de hardware físico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Gallery Showcase -->
+  <section id="galeria" class="section dual-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-gold">Galería de Entornos</div>
+        <h2>Escenarios Reales de Aplicación</h2>
+        <p>Explora la integración práctica de la computación espacial en laboratorios y centros de desarrollo.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Card 1 -->
+        <article class="gallery-card">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/systems_ar.jpg" alt="Monitoreo AR de Data Center" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <span class="badge">Realidad Aumentada</span>
+            <h3>Telemetría en Data Center</h3>
+            <p>Diagnóstico de servidores e inspección de topologías de red en tiempo real mediante capas holográficas.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="gallery-card">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/education_mr.jpg" alt="Aula de Clase de Realidad Mixta" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <span class="badge badge-gold">Docencia Inmersiva</span>
+            <h3>Aula Inmersiva Unilasallista</h3>
+            <p>Estudiantes analizando modelos de simulación 3D de dinámica de sistemas e ingeniería en tiempo real.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="gallery-card">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/spatial_lab.jpg" alt="Laboratorio de Computación Espacial" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <span class="badge">Laboratorio I+D</span>
+            <h3>Spatial Computing Lab</h3>
+            <p>Investigación aplicada en nuevos paradigmas de interacción humano-computador para graduandos.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Unilasallista Institution Banner -->
+  <section id="institucion" class="section">
+    <div class="container">
+      <div class="institution-banner">
+        <div class="institution-content">
+          <div class="badge badge-gold" style="margin-bottom: 1rem;">Compromiso Académico</div>
+          <h2>Corporación Universitaria Lasallista</h2>
+          <p>Fomentando la excelencia académica, la responsabilidad social y la adopción pionera de tecnologías emergentes como la Realidad Virtual, Aumentada y Mixta en la formación de Ingenieros de Sistemas del futuro.</p>
+        </div>
+        <div class="institution-badge">
+          <div class="institution-badge-number">100%</div>
+          <div class="institution-badge-label">Innovación Educativa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="brand-logo">
+            <div class="brand-icon">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">UNILASALLISTA</span>
+              <span class="brand-sub">Ingeniería & Computación Espacial</span>
+            </div>
+          </a>
+          <p>Landing page especializada en Realidad Virtual (VR), Realidad Aumentada (AR) y Realidad Mixta (MR) para la Ingeniería de Sistemas y la docencia universitaria.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#tecnologias">Tecnologías VR/AR/MR</a></li>
+            <li><a href="#perspectivas">Ingeniería & Docencia</a></li>
+            <li><a href="#simulacion">Simulador Interactivo</a></li>
+            <li><a href="#galeria">Casos de Uso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Institución</h4>
+          <ul>
+            <li><a href="#institucion">Unilasallista</a></li>
+            <li><a href="#">Ingeniería de Sistemas</a></li>
+            <li><a href="#">Innovación Docente</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Corporación Universitaria Lasallista. Desarrollado para la materia de Inteligencia Artificial & Profesión.</p>
+        <p>Diseño Minimalista sin emoticones | Soporte Modo Claro & Oscuro</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
